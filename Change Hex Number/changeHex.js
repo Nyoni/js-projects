@@ -9,9 +9,9 @@ button.addEventListener('click', changeHex)
 function changeHex() {
     let hex = '#'
 
-    for (let i=0; i<6; i++){
+    for (let i=0; i<6; i++){ //this for loop is so as to produce 6 digits e.g #64b6ac
         const index = Math.floor(Math.random()*hexValues.length)
-        hex+=hexValues[index]
+        hex+=hexValues[index] //the '#' will be added to the value of the index randomly created from above
     }
     value.textContent = hex
     body.style.backgroundColor = hex
